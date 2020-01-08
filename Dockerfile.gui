@@ -1,0 +1,15 @@
+ARG VERSION=1.14.1
+
+FROM openmodelica/openmodelica:${VERSION}
+
+ARG DISTRO=bionic
+ARG PACKAGES=openmodelica
+
+MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
+
+RUN apt-get update && apt-get install -qy $PACKAGES \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /data
+VOLUME ["/data"]
