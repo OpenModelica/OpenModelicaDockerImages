@@ -1,7 +1,7 @@
+
+FROM ubuntu:bionic
+
 ARG DISTRO=bionic
-
-FROM ubuntu:$DISTRO
-
 ARG VERSION=1.14.1
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
