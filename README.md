@@ -1,1 +1,1 @@
-The master branch is empty; do not build any "latest" image
+Dockerfiles for the OpenModelica version of the branch name
