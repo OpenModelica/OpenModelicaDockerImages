@@ -1,4 +1,4 @@
-FROM openmodelica/openmodelica:1.14.1
+FROM openmodelica/openmodelica:v1.14.1-minimal
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
