@@ -5,6 +5,3 @@ MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 RUN apt-get update && apt-get install -qy openmodelica \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-WORKDIR /data
-VOLUME ["/data"]

@@ -14,6 +14,3 @@ RUN apt-get update && apt-get upgrade -qy && apt-get dist-upgrade -qy\
     && apt-get install --no-install-recommends -qy omc \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
-
-WORKDIR /data
-VOLUME ["/data"]
