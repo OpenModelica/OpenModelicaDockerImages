@@ -1,1 +1,1 @@
-The master branch is empty; do not build any "latest" image
+OpenModelica docker images are here: https://hub.docker.com/r/openmodelica/openmodelica/tags
