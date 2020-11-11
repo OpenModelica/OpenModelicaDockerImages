@@ -1,6 +1,6 @@
-FROM ubuntu:bionic
+FROM ubuntu:focal
 
-ARG VERSION=1.14.1
+ARG VERSION=1.16.0
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 

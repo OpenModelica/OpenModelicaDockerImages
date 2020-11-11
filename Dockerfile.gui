@@ -1,4 +1,4 @@
-FROM openmodelica/openmodelica:v1.14.1-minimal
+FROM openmodelica/openmodelica:v1.16.0-ompython
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
