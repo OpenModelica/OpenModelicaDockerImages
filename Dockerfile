@@ -1,6 +1,6 @@
 FROM ubuntu:bionic
 
-ARG VERSION=1.14.1
+ARG VERSION=1.14.2
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
