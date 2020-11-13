@@ -1,6 +1,6 @@
-FROM ubuntu:bionic
+FROM ubuntu:xenial
 
-ARG VERSION=1.13.2
+ARG VERSION=1.12.0
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
