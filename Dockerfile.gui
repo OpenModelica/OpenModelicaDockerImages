@@ -1,7 +1,9 @@
-FROM openmodelica/openmodelica:v1.9.5-minimal
+FROM fedora:30
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
-RUN apt-get update && apt-get install -qy openmodelica libomccpp \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+RUN dnf install -y 'dnf-command(config-manager)' && \
+    dnf config-manager --add-repo https://build.openmodelica.org/rpm/fc30/omc.repo && \
+    dnf install --setopt=install_weak_deps=False --best -y openmodelica-1.9 && \
+    dnf clean all && \
+    rm -rf /var/cache/yum*
