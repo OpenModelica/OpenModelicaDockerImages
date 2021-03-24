@@ -1,6 +1,6 @@
 FROM ubuntu:focal
 
-ARG VERSION=1.16.2
+ARG VERSION=1.17.0
 
 MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
