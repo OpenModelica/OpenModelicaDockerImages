@@ -1,9 +1,9 @@
-VERSION=1.18.0
+VERSION=1.19.2
 
 build:
 	docker build --build-arg VERSION=$(VERSION) -t openmodelica/openmodelica:v$(VERSION)-minimal - < Dockerfile
-	docker build --build-arg BASE=openmodelica/openmodelica:v$(VERSION)-minimal -t openmodelica/openmodelica:v1.18.0-ompython - < Dockerfile.ompython
-	docker build --build-arg BASE=openmodelica/openmodelica:v$(VERSION)-ompython -t openmodelica/openmodelica:v1.18.0-gui - < Dockerfile.gui
+	docker build --build-arg BASE=openmodelica/openmodelica:v$(VERSION)-minimal -t openmodelica/openmodelica:v$(VERSION)-ompython - < Dockerfile.ompython
+	docker build --build-arg BASE=openmodelica/openmodelica:v$(VERSION)-ompython -t openmodelica/openmodelica:v$(VERSION)-gui - < Dockerfile.gui
 
 upload:
 	docker push openmodelica/openmodelica:v$(VERSION)-minimal
