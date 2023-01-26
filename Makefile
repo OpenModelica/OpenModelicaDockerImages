@@ -1,4 +1,4 @@
-VERSION=1.19.2
+VERSION=1.20.0
 
 build:
 	docker build --build-arg VERSION=$(VERSION) -t openmodelica/openmodelica:v$(VERSION)-minimal - < Dockerfile
