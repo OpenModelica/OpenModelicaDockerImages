@@ -1,8 +1,21 @@
-Dockerfiles for the OpenModelica version of the branch name.
+# Creating OpenModelica docker images
 
-To create the docker images, run (on an amd64 system and an arm64 system such as an Apple Silicon Mac):
+Dockerfiles for the OpenModelica version correspond to the branch name.
+
+## Dependencies
+
+You need to have a multi-platform build setup: https://docs.docker.com/build/building/multi-platform/
 
 ```
-make build
+make bootstrap
+```
+
+## Building
+
+To create the docker images, run:
+
+```
+make build && make build && make build
 make upload
 ```
+
