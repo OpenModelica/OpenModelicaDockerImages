@@ -2,8 +2,9 @@ ARG BASE
 
 FROM ${BASE}
 
-MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
+LABEL MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
-RUN export DEBIAN_FRONTEND="noninteractive" && apt-get update && apt-get install -qy openmodelica libomccpp \
+RUN export DEBIAN_FRONTEND="noninteractive" && apt-get update && apt-get install -qy openmodelica \
+    && (test `uname -m` = aarch64 || apt-get install -qy libomccpp) \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*

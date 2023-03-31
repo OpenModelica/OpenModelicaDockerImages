@@ -2,9 +2,9 @@ ARG BASE
 
 FROM ${BASE}
 
-MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
+LABEL MAINTAINER Martin Sjölund <martin.sjolund@liu.se>
 
 RUN export DEBIAN_FRONTEND="noninteractive" && apt-get update && apt-get install --no-install-recommends -qy python3-pip \
-    && pip3 install --no-cache-dir ompython \
+    && pip3 install --no-cache-dir --only-binary psutil ompython \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
