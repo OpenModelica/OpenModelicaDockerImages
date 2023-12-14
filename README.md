@@ -15,7 +15,7 @@ make bootstrap
 To create the docker images, run:
 
 ```
-make build && make build && make build
+make build # Will fail until docker supports multi-arch containers better
 make upload
 ```
 
