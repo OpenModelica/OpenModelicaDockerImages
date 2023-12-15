@@ -15,7 +15,6 @@ make bootstrap
 To create the docker images, run:
 
 ```
-make build && make build && make build
 make upload
 ```
 
