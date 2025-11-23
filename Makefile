@@ -1,4 +1,4 @@
-VERSION=1.25.5
+VERSION=1.25.6
 
 BUILDCOMMAND=docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7
 
